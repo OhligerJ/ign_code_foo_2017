@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>IGN Mobile</title>
+
+<!-- style kiddies -->
+<link rel="stylesheet" type="text/css" href="./styles.css">
+<link rel="stylesheet" type="text/css" href="./normalize.css">
+
+<!-- script kiddies -->
+<script
+  src="https://code.jquery.com/jquery-3.2.0.js"
+  integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./api-consume.js"></script>
+<script type="text/javascript" src="./ux_jquery.js"></script>
+
+</head>
+<body>
+
+<div class="body">
+  
+  <header>
+    <div class="sections">
+      <div class="videos_section active_header"><u>VIDEOS</u></div>
+      <div class="articles_section inactive_header"><u>ARTICLES</u></div>
+    </div>
+  </header>
+
+  <div id="content">
+  </div>
+
+  <footer>
+    <h4><a id="see_more" href="#">SEE MORE VIDEOS...</a></h4>
+  </footer>
+
+
+</div>
+
+<script>
+window.current_values = {type:"videos", index: 1}
+apiConsume(current_values);
+
+$("a#see_more").on("click", function(e){
+  e.preventDefault();
+  apiConsume(current_values);
+});
+
+$("div.articles_section").on("click", function(e){
+  e.preventDefault();
+  $("#content").html("");
+  $("a#see_more").html("SEE MORE ARTICLES...");
+  $("div.videos_section").addClass("inactive_header").removeClass("active_header");
+  $("div.articles_section").addClass("active_header").removeClass("inactive_header");
+  current_values = {type:"articles", index:1};
+  apiConsume(current_values);
+});
+
+$("div.videos_section").on("click", function(e){
+  e.preventDefault();
+  $("#content").html("");
+  $("a#see_more").html("SEE MORE VIDEOS...");
+  $("div.articles_section").addClass("inactive_header").removeClass("active_header");
+  $("div.videos_section").addClass("active_header").removeClass("inactive_header");
+  current_values = {type:"videos", index:1};
+  apiConsume(current_values);
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+problem 4 tickets
+
+1. Consume JSON API cleanly
+
+2. Divide into videos and articles. 
+2a. List each as 01, with dark grey bold title and light-grey description, with time to the far right
+
+3. Static styles:
+Selected header: color: white, background red, non-selected: color:red, background, white. Circular ends. Hover over name gives underline.
+
+4. On video/article hover, background of that piece turns grey, and a thick red border shows up on the right side
+
+5. On click: content goes away, replaced with relevant image, pushing down other videos/articles
+
+
+Bugs:
+
+Coming soon
+
+Suggested Improvements:
+
+1. Standardize API metadata names where possible. For example, longTitle for videos and headline for articles. Limiting specialties of treatment of articles vs videos can only help us remain scalable long-term.
+2. Added "underline" beneath the active category in order to make it clearer to the user which section they're in. Then took it out because it looked a bit ugly when static.
+3. Added a bit of margin to the top and bottom of the article images. It looks cleaner and provides sharper focus on the image.
+4. If I had more time, I would alter my methodology so that when I clicked a second article, the one that was opened would return to its normal state. Right now, it creates a list of images if I just keep clicking, and while it doesn't look bad per se, it would be cleaner if only one image was open at a time.
+5. I like having the border between the final item and "SEE MORE VIDEOS...". It creates a visually clearer delineation between sections where a click action does one thing (opens up image previews), and section where it does something different (gets more videos or articles). If we decided to continue with the original design, I would rearrange the styles so that I could use :lastchild to create border-bottom none on the final element.

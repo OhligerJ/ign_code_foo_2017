@@ -1,0 +1,19 @@
+IGN Code Foo 2017 - Problem 2
+
+"King Kong enjoys climbing the real Empire State Building in New York City to relax after a long shoot, but prefers to spend summers in temperate San Francisco. San Francisco plans to build a to-scale Lincoln Log replica of The Empire State Building as a thank you for King Kong's many years of B-Movie service. They want you to figure out how many Lincoln Logs it would take. Describe each step in your thought process."
+
+I see an open-ended and creative resource estimation and allotment problem. Excellent.
+
+tl;dr: If this is for a cost estimate, I'd estimate based off previously-built Lincoln Log structures. If this needs to pass civil engineering requirements, I'd work with an actual civil engineer.
+
+First I would make sure 'to-scale' meant 1:1. 
+
+Second, I would ask for the desired accuracy of this estimation. I may have other things on my plate, including with the city of San Francisco, so I want to see if we're pitching an estimate, or they're moving ahead and need to decide how many to order from the K'NEX company.
+
+If we're just pitching, it looks like we can base a rough estimate on the structure shown in this video: https://www.youtube.com/watch?v=tB10DD7keLk. This looks to be roughly 10,000 pieces (minus a bit for the roofs), is said to have topped out at 5 feet, and roughly matches a 30-60-90 triangle. Stick two together to get a rectangle that's 5' by 5rad3' for rectangles of 20,000 logs for about 43.3 square feet. According to this site (https://prezi.com/2et7jrgabgy4/copy-of-surface-area-and-volume-of-buildings-pbl-project/), the surface area of the Empire State building is 87,120 square feet. Division says we would need about 2012.009 of these rectangles to cover all of that surface area, so we're looking at about 40,240,180 Lincoln Logs by this methodology. This would allow us to create a structure that, if properly glued together with the strongest glue or epoxy on earth (who am I kidding, we'd use duct tape) and the level of hope and prayer that keeps the Rebel Alliance alive, could potentially be safe for Mr. Kong to climb. Just don't ask me to insure it.
+
+Third, I would ask if we're using the traditional Lincoln Logs suggested by the capitalization in the problem statement, or if we were to make our own, more life-sized, Lincoln Logs. Assuming no objections from the EPA under Scott Pruitt, we could even use redwoods to do the trick; this would provide parity with the original materials used for Lincoln Logs (I'm kidding; let's please keep as many CO2 sinks as possible).
+
+Assuming we're using the traditional Lincoln Logs, I'd ask if we're trying to match the inside as well, i.e. creating desks, chairs, coffee machines, and meeting rooms, or if we're only trying to duplicate the outer surface area. If we are indeed trying to go for near-complete accuracy, I'd bring in an engineer and ask him if AutoCAD has a Lincoln Logs mod, and to please reconstruct the Empire State Building using that mod. On second thought, we should really do that in the first place. On third thought, if we're doing everything on every floor, we'd probably need some time on a supercomputer. If we do all the details on all the floors, we could probably set AutoCAD in motion and take a nice vacation to Hawaii while we wait. If we're just doing outer surface area, it would probably take a few hours at most.
+
+Come to think of it, my engineer friend might know 1) if there's architecture software out there that could be modded and handed a function to create a model of this Lincoln Log Empire State Building, 2) who could properly mod it, and then step 3 would be to set it up.
