@@ -29,11 +29,18 @@ Graph.prototype.addNode = function(node){
 
 Graph.prototype.generate = function(n){
 	var grid_nodes = Math.pow(n, 2);
+	this.dimensions = n;
+
 	for(var i=0; i<grid_nodes;i++){
 		var node = new Node(rand(0, grid_nodes), i, []);
 		this.addNode(node);
 	}
 
+
 	// create paths
 
+};
+
+Graph.prototype.boggleSequences = function(){
+	var seq_val = Math.pow(this.dimension, 2);
 };

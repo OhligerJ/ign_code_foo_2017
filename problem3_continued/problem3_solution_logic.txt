@@ -18,6 +18,6 @@ Step 5: Create display for these grids
 Algorithm approach:
 
 - Start at initial vertex (we'll use upper-left node as the initial node).
-- DFS through nodes until we hit or exceed n x n. If we hit, store the relevant sequence in our return array. Also, if we hit, recurse through adjacent nodes with value of 0, adding these as valid sequences.
+- DFS through nodes until we hit or exceed n x n (for n=3, the value here is 9). If we hit, store the relevant sequence in our return array. Also, if we hit, recurse through adjacent nodes with value of 0, adding these as valid sequences.
 - Once we have completed all sequences with an initial vertex, recurse through DFS for all child nodes of the intial vertex.
 - When we have a node with no child nodes, return the array of valid sequences.
