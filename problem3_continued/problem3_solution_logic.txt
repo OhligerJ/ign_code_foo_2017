@@ -1,0 +1,23 @@
+This is a pathing problem, except instead of trying to find the shortest path, which involves updating a variable with the shortest path value to compare to, usually while performing something like Djikstra's algorithm, we're trying to find all unique paths that achieve a constant total. My combinatorics knowledge could once let me calculate the number of unique paths, but we're looking at something over 2^n for an n by n grid, where n > 1. For computer science people, we're in NP space. For developers, this is going to scale terribly.
+
+Since it is unclear whether the random numbers can repeat, I can assume they can. So we can have a 3x3 grid of 3,3,3; 3,3,3; 3,3,3. In this case, nodes must be given a position as well as a value.
+
+We'll treat the grid as a directed graph; this will allow us to cover all possible combinations without duplication
+
+So here's the general approach: treat grid as directed graph starting in upper-left, depth first search, with some optimizations.
+
+Blackjack logic: if it's less than n-squared, keep going. If it is equal, arrange nodes in ascending order, check for prexisitng value in list, insert if it isn't.  If it is greater than, move on to next one.
+
+
+Step 1: Create node data structure
+Step 2: Create graph data structure
+Step 3: Create function to generate n by n grid with the appropriate parameters
+Step 4: Create depth-first search style function to discover paths
+Step 5: Create display for these grids
+
+Algorithm approach:
+
+- Start at initial vertex (we'll use upper-left node as the initial node).
+- DFS through nodes until we hit or exceed n x n. If we hit, store the relevant sequence in our return array. Also, if we hit, recurse through adjacent nodes with value of 0, adding these as valid sequences.
+- Once we have completed all sequences with an initial vertex, recurse through DFS for all child nodes of the intial vertex.
+- When we have a node with no child nodes, return the array of valid sequences.
